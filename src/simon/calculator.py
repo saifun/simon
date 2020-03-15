@@ -36,17 +36,22 @@ def fac(num):
         result = result * i
     return result
 
+def recursion_factorial(number):
+    if number == 1 or number == 0:
+        return 1
+    return number * recursion_factorial(number - 1)
+
 
 def main():
     print('Pasi', "Arbel")
-    print(fac(5))
-    print(fac(7))
-    print(fac(1))
-    print(fac(2))
-    print(fac(0))
-    print(fac(100))
-    print(fac(1000))
-    print(fac(10000))
+    print(recursion_factorial(5))
+    print(recursion_factorial(7))
+    print(recursion_factorial(1))
+    print(recursion_factorial(2))
+    print(recursion_factorial(0))
+    print(recursion_factorial(100))
+    print(recursion_factorial(1000))
+    print(recursion_factorial(10000))
     # print(add(7, 5))
     # print(pow(100, 3))
     # print(power(11, 2))
